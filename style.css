@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+    background-color: #302b2b;
+}
+
+#resultado{
+    display: inline-flex;
+    flex-flow: wrap;
+}
+
+.Libro img{
+    height: 30vh;
+    width: 15vw;
+    border: solid 4px white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.Libro{
+    margin: 3%;
+    margin-left: 5%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+
+.Libro img:hover {
+    border: #302b2b;
+    cursor: pointer;
+}
+
+
+#Cerrar{
+    max-height:5%;
+    max-width: 2%;
+    flex:1;
+    background: url("cerrar.png");
+    background-size: 100% 100%;
+    margin-right:20px;
+    margin-top:20px;
+    }
+    
+#Cerrar:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+    .Libro{
+        margin: auto;
+        margin-top: 25px;
+        align-items: center;
+  justify-content: center;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-flow: column;  
+    }
+    
+    .Libro img{
+        min-width: 40vh;
+        max-width: 40vh;
+    }
+}
+
+
+
+
+
+  header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+
+  #search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
+    
+}
+
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
+}
+
+    .search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 30px;
+        line-height: 18px;
+        padding: 0 2px 0 2px;
+        border-radius:20px;
+        text-align: center;
+    }
+
+        .search:hover input, .search input:focus {
+            width: 200px;
+            margin-left: 0px;
+        }
+
+.btn {
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-radius:20px;
+}
+
+
+
+
+
+
+
+.LibroVista{
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 70vh;
+    width: 80%;
+    border: solid 3px white;
+    border-radius: 30px; 
+    display: flex;
+    flex-flow: row;
+}
+
+#textoVista{
+    flex: 4;
+
+}
+#imgVista{
+    flex: 2;
+    font-size: 3vh;
+}
+#imgVista img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#textoVista h6{
+    margin: 30px;
+    font-weight: bold;
+    font-size: 2vw;
+    color: rgb(28, 66, 146);
+    font-family: 'Raleway', sans-serif;
+}
+h6 p{
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15%;
+    color:white;
+    font-size: 1vw;
+}
+
+@media (max-width: 500px) {
+    .LibroVista{
+        height: auto;
+        display: flex;
+        flex-flow: column;        
+    }
+    #imgVista{
+        width: 100%;
+    }
+    #imgVista img{
+        height: auto;
+        width: 100%;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 0px;
+    }
+    #textoVista h6{
+        margin-left: 5%;
+        font-size: 5vw;
+    }
+    #textoVista h6 p{
+        font-size: 3vw;
+        margin-left: 20%;
+    }
+    
+}
+@media (max-width: 620px) {
+    .LibroVista{
+        height: auto;
+        display: flex;
+        flex-flow: column;        
+    }
+    #imgVista{
+        width: 100%;
+    }
+    #imgVista img{
+        height: auto;
+        width: 100%;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0px;
+    }
+    
+}  
+
+
+
+
+.social:hover {
+    transform: scale(1.5);
+    
+}
+.social {
+    margin-left: 25px;
+    margin-top:0px;
+    transform: scale(1);
+    transition-duration: 0.5s;
+
+}
+
+i:hover{
+    cursor: pointer;
+}
+#social-fb:hover {
+    color: rgb(28, 66, 146);
+}
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-gh:hover {
+    color: #8b2199;
+}
+#social-em:hover {
+    color: #d64937;
+}
+#social-in:hover {
+    color: #b4771a;
+}
+
+.txt-railway{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size:3vh; 
+}
+
+
+#load{
+    position: fixed;
+    margin-left: 33%;
+    margin-top: -25%;
+    height: 80%;
+    width: 30%;
+}

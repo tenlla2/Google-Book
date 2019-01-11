@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Busca tu libro</title>
+</head>
+
+<body>
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex text-center h-100">
+                <div class="my-auto w-100 text-white">
+                    <h1 class="display-3">¿Qué libro estás buscando?</h1>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="search">
+                                <input id="buscar" type="text" class="form-control input-sm col-md-12 col-md-offset-12"
+                                    maxlength="30" placeholder="Libro" />
+                                <button id="busqueda" type="submit" class="btn btn-primary btn-sm" onclick="buscarLibroPrimeraVez()">Search!</button>
+                            </div>
+                        </div>
+                    </div>
+
+    </header>
+    <img id="load" src="loading.gif" alt="load Gif">
+
+    <div id="resultado"></div>
+    <div id="resultado2"></div>
+    <div class="footer">
+
+        <div class="text-center center-block mh-100">
+            <p class="txt-railway">Antonio Tenllado Humanes</p>
+            <a href="https://github.com/tenlla2"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+            <a href="mailto:tenlla2@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+            <a href="https://www.facebook.com/antonio.tenllado"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://twitter.com/tenlla2"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+            <a href="https://www.instagram.com/tenlla2/"><i id="social-in" class="fa fa-instagram fa-3x social" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="books.js"></script>
+</body>
+
+</html>
